@@ -39,6 +39,7 @@ class ViewController: UIViewController {
             imageView.frame = CGRect(x: newX - 75, y: (scrollView.frame.size.height / 2) - 75, width: 150, height: 150)
         }
         
+        view.addGestureRecognizer(scrollView.panGestureRecognizer)
         scrollView.contentSize = CGSize(width: contentWidth, height: view.frame.size.height)
         
         scrollView.clipsToBounds = false
